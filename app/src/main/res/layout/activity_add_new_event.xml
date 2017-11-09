@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:padding="10dip">
+
+    <TextView
+        android:id="@+id/label_head"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Event"
+        android:textStyle="bold"
+        android:textSize="@dimen/head_size"
+        android:padding="20dp"
+
+        />
+    <TextView
+        android:id="@+id/label_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_head"
+        android:padding="10dp"
+        android:text="Title"/>
+
+    <EditText
+        android:id="@+id/entry_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_title"/>
+    <TextView
+        android:id="@+id/label_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:padding="10dp"
+        android:layout_below="@+id/entry_title"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/entry_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:layout_below="@+id/label_description"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/label_date"
+        android:layout_width="wrap_content"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_below="@id/entry_description"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/label_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_below="@id/label_date"
+        android:padding="15dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_add_new_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:layout_below="@id/label_time"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Add Event" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:onClick="onClick"
+        android:id="@+id/button_select_date"
+        android:layout_alignTop="@+id/label_date"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:onClick="onClick"
+        android:id="@+id/button_select_time"
+        android:layout_alignTop="@+id/label_time"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</RelativeLayout>
